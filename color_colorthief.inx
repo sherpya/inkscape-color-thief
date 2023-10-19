@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Color Thief</name>
+    <id>org.inkscape.color.colorthief</id>
+    <effect needs-live-preview="false">
+        <object-type>image</object-type>
+        <effects-menu>
+            <submenu name="Color"/>
+        </effects-menu>
+    </effect>
+
+    <param name="ncolors" type="int" min="1" max="256" gui-text="Number of Colors:">16</param>
+    <script>
+        <command location="inx" interpreter="python">color_colorthief.py</command>
+    </script>
+</inkscape-extension>
